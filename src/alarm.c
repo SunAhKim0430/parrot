@@ -216,7 +216,7 @@ Parrot_alarm_wait_for_next_alarm(SHIM_INTERP)
     const FLOATVAL time = alarm_set_to - now_time;
 
     if (time > 0)
-        Parrot_usleep(time * 999999);
+        Parrot_usleep(time * 100000);
 }
 
 /*
